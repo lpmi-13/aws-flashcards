@@ -1,0 +1,16 @@
+{
+  "name": "spark-beam-gun-rGetCustomerInformationAppFunction-13L95YQ1A4FGG",
+  "description": ""
+}
+{
+  "name": "nodeFunction",
+  "description": "An Amazon SNS trigger that logs the message pushed to the SNS topic."
+}
+{
+  "name": "Go-function",
+  "description": "this is a go function but I have no idea what it does"
+}
+{
+  "name": "spark-beam-fun-rGetCustomerInformationAppFunction-1NSL4A3DIN6Q1",
+  "description": "I honestly don't recall what this does"
+}

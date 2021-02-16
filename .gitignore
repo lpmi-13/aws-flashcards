@@ -2,4 +2,3 @@
 .aws
 .env
 node_modules
-*.json
