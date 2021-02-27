@@ -2,3 +2,4 @@
 .aws
 .env
 node_modules
+build

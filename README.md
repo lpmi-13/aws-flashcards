@@ -22,7 +22,9 @@ npm run build
 I was hoping to have a docker-compose.yaml to just do this without needing to install the awscli...but not working yet (wanted to use the amazong/aws-cli specifically), so just install the aws-cli yourself and run the following:
 
 ```bash
-aws lambda list-functions -o json > functions.json
+docker build -t lambda .
+docker run -it --rm -v ~/.aws:/root/.aws -v $(pwd)/data:/data lambda
+
 ```
 
 Make sure you have your credentials set up (somewhere like `~/.aws`) for this to work.
