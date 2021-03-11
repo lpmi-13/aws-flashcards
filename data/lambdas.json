@@ -1,16 +1,44 @@
 {
-  "name": "spark-beam-gun-rGetCustomerInformationAppFunction-13L95YQ1A4FGG",
-  "description": ""
-}
-{
-  "name": "nodeFunction",
-  "description": "An Amazon SNS trigger that logs the message pushed to the SNS topic."
-}
-{
-  "name": "Go-function",
-  "description": "this is a go function but I have no idea what it does"
-}
-{
-  "name": "spark-beam-fun-rGetCustomerInformationAppFunction-1NSL4A3DIN6Q1",
-  "description": "I honestly don't recall what this does"
+  "Functions": [
+    {
+      "FunctionName": "spark-beam-gun-rGetCustomerInformationAppFunction-13L95YQ1A4FGG",
+      "Runtime": "python3.7",
+      "Handler": "get_item.lambda_handler",
+      "CodeSize": 2502,
+      "Description": "",
+      "Timeout": 10,
+      "MemorySize": 128,
+      "Version": "$LATEST"
+    },
+    {
+      "FunctionName": "nodeFunction",
+      "Runtime": "nodejs12.x",
+      "Handler": "index.handler",
+      "CodeSize": 214,
+      "Description": "An Amazon SNS trigger that logs the message pushed to the SNS topic.",
+      "Timeout": 3,
+      "MemorySize": 128,
+      "Version": "$LATEST"
+    },
+    {
+      "FunctionName": "Go-function",
+      "Runtime": "go1.x",
+      "Handler": "hello",
+      "CodeSize": 1512356,
+      "Description": "this is a go function but I have no idea what it does",
+      "Timeout": 15,
+      "MemorySize": 512,
+      "Version": "$LATEST"
+    },
+    {
+      "FunctionName": "spark-beam-fun-rGetCustomerInformationAppFunction-1NSL4A3DIN6Q1",
+      "Runtime": "python3.7",
+      "Handler": "get_item.lambda_handler",
+      "CodeSize": 2502,
+      "Description": "I honestly don't recall what this does",
+      "Timeout": 10,
+      "MemorySize": 128,
+      "Version": "$LATEST"
+    }
+  ]
 }
