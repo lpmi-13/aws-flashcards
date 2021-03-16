@@ -19,7 +19,7 @@ npm run build
 
 ## Getting some data
 
-I was hoping to have a docker-compose.yaml to just do this without needing to install the awscli...but not working yet (wanted to use the amazong/aws-cli specifically), so just install the aws-cli yourself and run the following:
+I was hoping to have a docker-compose.yaml to just do this without needing to build docker images manually...but not working yet (wanted to use the amazon/aws-cli specifically), so just build and run the image yourself with the following:
 
 ```bash
 docker build -t lambda .
