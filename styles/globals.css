@@ -72,3 +72,19 @@ body {
   border-radius: 1.25em;
   margin: 1em;
 }
+
+.header, .swipe-arrows {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  padding: 1em 1.5em;
+}
+
+.header {
+    align-self: flex-start;
+}
+
+.swipe-arrows {
+    align-self: center;
+    margin-top: 2em;
+}

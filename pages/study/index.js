@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import fs from 'fs'
 import path from 'path'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faHome } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../../src/Layout';
 import Card from '../../src/card';
@@ -34,6 +35,9 @@ const Study = ({jsonData}) => {
 
   return (
     <Layout>
+      <div className="header">
+        <Link href="/"><FontAwesomeIcon icon={faHome} /></Link>
+      </div>
       <div className="container">
           <Card description={description} isSlidingLeft={isSlidingLeft} name={name} />
       </div>
