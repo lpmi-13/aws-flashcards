@@ -38,12 +38,14 @@ const Study = ({jsonData}) => {
       <div className="header">
         <Link href="/"><FontAwesomeIcon icon={faHome} /></Link>
       </div>
+      <div>click to flip over</div>
       <div className="container">
           <Card description={description} isSlidingLeft={isSlidingLeft} name={name} />
       </div>
       <div role="button" aria-label="flashcard name" className="swipe-arrows">
           <div className="left-arrow" onClick={handleClickLeft}>
             <FontAwesomeIcon icon={faArrowLeft} />
+            <div>next card</div>
           </div>
       </div>
     </Layout>

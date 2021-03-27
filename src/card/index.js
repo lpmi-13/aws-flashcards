@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Card = ({
 	description,
 	isSlidingLeft,
 	name,
 }) => {
+
+	useEffect(() => {
+		setFlipped(false);
+	}, [isSlidingLeft]);
 
 	const [flipped, setFlipped] = useState(false);
 	const handleClick = () => setFlipped(!flipped)
